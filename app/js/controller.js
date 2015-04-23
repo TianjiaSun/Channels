@@ -72,8 +72,7 @@ var store = angular.module('store',['ngRoute'])
 
   // to avoid flashing during page loading
   $scope.init = function () {
-    $("#navigation_container").fadeIn(1000);
-    $("#main_container").fadeIn(1000);
+    $("#main_container").show();
   };
 
 /*  // open share solution dialog
