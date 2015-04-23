@@ -13,126 +13,182 @@
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
-  <title>GAUSIAN Store</title>
+  <title>Channels</title>
 </head>
 <body data-ng-controller="StoreListCtrl" data-ng-init="init()" style="overflow: hidden;">
 <div class="whole_container">
 
-  <div id="category_container">
-    <div class="logo">GAUSIAN Store</div>
-    <div class="search_bar">
-      <input class="search_bar_input" placeholder="Search..." ng-model="query" ng-keydown="Search($event)"></input>
-      <div class="search_bar_bn" ng-click="ClickSearch()"></div>
+  <div id="left_container">
+    <div class="left_h1">Online Channels</div>
+    <div class="left_h2">Your All-in-One online business entrance</div>
+    <div class="left_h3">
+      <img class="h3_thumb" src="img/thumb.png"/>
+      <div class="h3_text">Push your products into all big online channels</div>
     </div>
-    <div class="main_navigator_h1" ng-click="filterCAT('Recommended')">Recommended</div>
-    <div class="main_navigator_h1" ng-click="filterCAT('Business Tools')">Business Tools</div>
-      <div class="main_navigator_h2" ng-click="filterCAT('Administrative')">Administrative</div>
-      <div class="main_navigator_h2" ng-click="filterCAT('Advertising')">Advertising</div>
-      <div class="main_navigator_h2" ng-click="filterCAT('Analytics')">Analytics</div>
-      <div class="main_navigator_h2" ng-click="filterCAT('Collaborative')">Collaborative</div>
-      <div class="main_navigator_h2" ng-click="filterCAT('Customer Relationship')">Customer Relationship</div>
-      <div class="main_navigator_h2" ng-click="filterCAT('e-Commerce')">e-Commerce</div>
-      <div class="main_navigator_h2" ng-click="filterCAT('Financial')">Financial</div>
-      <div class="main_navigator_h2" ng-click="filterCAT('Human Resource')">Human Resource</div>
-      <div class="main_navigator_h2" ng-click="filterCAT('Inventory')">Inventory</div>
-      <div class="main_navigator_h2" ng-click="filterCAT('Manufacturing')">Manufacturing</div>
-      <div class="main_navigator_h2" ng-click="filterCAT('Marketing')">Marketing</div>
-      <div class="main_navigator_h2" ng-click="filterCAT('Projects')">Projects</div>
-      <div class="main_navigator_h2" ng-click="filterCAT('Public Relationship')">Public Relationship</div>
-      <div class="main_navigator_h2" ng-click="filterCAT('Research')">Research</div>
-      <div class="main_navigator_h2" ng-click="filterCAT('Risk')">Risk</div>
-      <div class="main_navigator_h2" ng-click="filterCAT('Supplier')">Supplier</div>
-      <div class="main_navigator_h2" ng-click="filterCAT('Tax')">Tax</div>
-    <div class="main_navigator_h1" ng-click="filterCAT('Productivity')">Productivity</div>
-    <div class="main_navigator_h1" ng-click="filterCAT('Training')">Training</div>
-    <div class="main_navigator_h1" ng-click="filterCAT('Utilities')">Utilities</div>
-    <div class="main_navigator_h1" ng-click="filterCAT('Developers')">Developers</div>
+    <div class="left_h3">
+      <img class="h3_thumb" src="img/thumb.png"/>
+      <div class="h3_text">Collect all orders together</div>
+    </div>
+    <div class="left_h3">
+      <img class="h3_thumb" src="img/thumb.png"/>
+      <div class="h3_text">Closely work with advertising, shipment, inventory, report, accounting, taxing...</div>
+    </div>
+    <div class="left_h3">
+      <img class="h3_thumb" src="img/thumb.png"/>
+      <div class="h3_text">More channels are comming</div>
+    </div>
+    <div class="left_h3">& It's <span style="">ALL FREE.</span></div>
   </div>
-  
-  <div id="list_container" hidden>
-    <div class="page_header">{{header}} ({{filterredApps.length}})</div>
-    <div ng-repeat="app in filterredApps | orderBy:'-certified'">
-      <div class="app_unit" ng-click="openApp(app)">
-        <img class="app_ad" src="{{app.ad}}"/>
-        <div class="app_gradient"></div>
-        <div class="app_mask"></div>
-        <div class="app_name">{{app.name}}</div>
-        <div class="app_brief">{{app.brief}}</div>
-        <div class="app_price">{{app.pricing}}</div>
-        <img class="app_icon" src="{{app.icon}}"/>
-        <img class="overlay_app_certified" ng-show="app.certified == 'true'" src="img/certified.png"/>
+
+  <div id="right_container">
+    <div class="right_h1">TWO STEPS</div>
+
+    <div ng-class="{
+        'step_line': true,
+        'step_line_highlight': hover_get_started==true}">
+    </div>
+
+    <div class="right_h2">
+      <img ng-class="{
+        'h2_step': true,
+        'h2_step_highlight': hover_get_started==true}" 
+        src="img/step.png"/>
+      <div ng-class="{
+        'h2_text': true,
+        'h2_text_highlight': hover_get_started==true}"
+        ng-mouseover="hover_get_started=true;"
+        ng-mouseleave="hover_get_started=false;">
+        Activate Channels
       </div>
     </div>
-  </div>
+    <div class="right_h2">
+      <img class="h2_step" src="img/step.png"/>
+      <div class="h2_text">Push Your First Product</div>
+    </div>
 
-  <div id="search_container" hidden>
-    <div class="page_header">{{search_header}}</div>
-    <div ng-repeat="app in searchedApps | orderBy:'-certified'">
-      <div class="app_unit" ng-click="openApp(app)">
-        <img class="app_ad" src="{{app.ad}}"/>
-        <div class="app_gradient"></div>
-        <div class="app_mask"></div>
-        <div class="app_name">{{app.name}}</div>
-        <div class="app_brief">{{app.brief}}</div>
-        <div class="app_price">{{app.pricing}}</div>
-        <img class="app_icon" src="{{app.icon}}"/>
-        <img class="overlay_app_certified" ng-show="app.certified == 'true'" src="img/certified.png"/>
+    <div class="Relevant_app_container">
+      <div class="Relevant_app_title">APPs Work Together for You</div>
+      <div class="app_unit">
+        <img class="app_icon" src="img/product.png"/>
+        <div class="app_name">Products</div>
+      </div>
+      <div class="app_unit">
+        <img class="app_icon" src="img/order.png"/>
+        <div class="app_name">Orders</div>
+      </div>
+      <div class="app_unit">
+        <img class="app_icon" src="img/shipment.png"/>
+        <div class="app_name">Shipment</div>
+      </div>
+      <div class="app_unit">
+        <img class="app_icon" src="img/inventory.png"/>
+        <div class="app_name">Inventory</div>
+      </div>
+      <div class="app_unit">
+        <img class="app_icon" src="img/competitor.png"/>
+        <div class="app_name">Competitor</div>
       </div>
     </div>
+
   </div>
 
-  <div id="overlay_container" hidden>
-    <div class="overlay_close_x" ng-click="closeApp()"></div>
-    <div class="overlay_app_header">
-      <div class="overlay_app_header_name">{{app.name}} 
-        <span style="font-size: 14px;">(Direct Experience in Store)</span>
+  <div id="main_container">
+    <div ng-class="{
+        'start_container': true,
+        'start_container_hover': hover_get_started==true}"
+        ng-mouseover="hover_get_started=true;"
+        ng-mouseleave="hover_get_started=false;"
+        ng-init="hover_get_started=false">
+      <div class="power_ring"></div>
+      <div class="power_dot"></div>
+      <div class="start_text">One-Click</br>to activate your</br>channels</div>
+    </div>
+    <div class="additional_shadow"></div>
+
+    <div class="c_web_container angle_1">
+      <div class="web_card card_1">
+        <img class="full" src="img/web_1.png"/>
       </div>
     </div>
-    <div class="overlay_iframe_container">
-      <iframe
-        id="iframe_id"
-        class="full" 
-        frameBorder="0"
-        ng-src="{{app_path}}">
-      </iframe>
-      <div id="iframe_cover_before_loaded">
-        <div class="iframe_loading">
-          <div class="loader"></div>
-        </div>
+    <div class="c_web_container angle_2">
+      <div class="web_card card_2">
+        <img class="full" src="img/web_2.png"/>
       </div>
     </div>
+    <div class="c_web_container angle_3">
+      <div class="web_card card_3">
+      </div>
+    </div>
+    <div class="c_web_container angle_4">
+      <div class="web_card card_4">
+      </div>
+    </div>
+    <div class="c_web_container angle_5">
+      <div class="web_card card_5">
+      </div>
+    </div>
+    <div class="c_web_container angle_6">
+      <div class="web_card card_6">
+      </div>
+    </div>
+    <div class="c_web_container angle_7">
+      <div class="web_card card_7">
+      </div>
+    </div>
+    <div class="c_web_container angle_8">
+      <div class="web_card card_8">
+      </div>
+    </div> 
+    <div class="c_web_container angle_9">
+      <div class="web_card card_9">
+      </div>
+    </div>
+    <div class="c_web_container angle_10">
+      <div class="web_card card_10">
+      </div>
+    </div>
+    <div class="c_web_container angle_11">
+      <div class="web_card card_11">
+      </div>
+    </div>
+    <div class="c_web_container angle_12">
+      <div class="web_card card_12">
+      </div>
+    </div>
+    <div class="c_web_container angle_13">
+      <div class="web_card card_13">
+      </div>
+    </div>
+    <div class="c_web_container angle_14">
+      <div class="web_card card_14">
+      </div>
+    </div>
+    <div class="c_web_container angle_15">
+      <div class="web_card card_15">
+      </div>
+    </div>
+    <div class="c_web_container angle_16">
+      <div class="web_card card_16">
+      </div>
+    </div> 
+    <div class="c_web_container angle_17">
+      <div class="web_card card_17">
+      </div>
+    </div>
+    <div class="c_web_container angle_18">
+      <div class="web_card card_18">
+      </div>
+    </div> 
   </div>
 
-  <div id="movein_container" hidden>
-    <div class="overlay_close_x_2" ng-click="closeApp()"></div>
-    <div class="overlay_app_logo" >
-      <img class="overlay_app_img" src="{{app.icon}}"/>
-    </div>
-    <div class="overlay_name">{{app.name}}</div>
-    <div class="overlay_brief">{{app.brief}}</div>
-    <div class="overlay_side_price">FREE
-      <div class="overlay_side_get" ng-click="install_this_app()">GET</div>
-    </div>
-    <div class="overlay_review">
-      <div class="overlay_user_number">1,034 Users</div>
-      <span class="star-icon full">☆</span>
-      <span class="star-icon full">☆</span>
-      <span class="star-icon full">☆</span>
-      <span class="star-icon half">☆</span>
-      <span class="star-icon">☆</span>
-    </div>
-    <!-- <div class="overlay_related">Related APPs</div> -->
-  </div>
-
-
-    <script src="jquery-1.11.2.min.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="js/controller.js"></script>
-    <script src="js/display.js"></script>
-    <script src="components/version/version.js"></script>
-    <script src="components/version/version-directive.js"></script>
-    <script src="components/version/interpolate-filter.js"></script>
+  <script src="jquery-1.11.2.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="js/controller.js"></script>
+  <script src="js/display.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
 </div>
 </body>
 </html>
