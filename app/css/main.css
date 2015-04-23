@@ -211,7 +211,7 @@ text-align: center;
 font-family: arial;
 font-weight: bold;
 font-size: 3.4vh;
-color: rgb(12, 62, 95);
+color: white;
 -webkit-transition: 0.3s ease-in-out;
 -moz-transition: 0.3s ease-in-out;
 -o-transition: 0.3s ease-in-out;
@@ -653,15 +653,12 @@ width: 8vh;
 height: 8vh;
 border-radius: 2vh;
 overflow: hidden;
-box-shadow: 0 0 1vh 1px white;
--webkit-transition: 0.2s ease-in-out;
--moz-transition: 0.2s ease-in-out;
--o-transition: 0.2s ease-in-out;
-transition: 0.2s ease-in-out;
+box-shadow: 0 0 0.5vh 0px white;
 }
 
 .app_icon:hover {
 cursor: pointer;
+box-shadow: 0 0 1.5vh 2px white;
 }
 
 .app_name {
