@@ -662,11 +662,6 @@ transition: 0.2s ease-in-out;
 
 .app_icon:hover {
 cursor: pointer;
--webkit-transform: scale(1.05) translateY(-1.5vh);
--moz-transform: scale(1.05) translateY(-1.5vh);
--o-transform: scale(1.05) translateY(-1.5vh);
--ms-transform: scale(1.05) translateY(-1.5vh);
-transform: scale(1.05) translateY(-1.5vh);
 }
 
 .app_name {
