@@ -466,6 +466,14 @@ height: 12vh;
 -ms-transform:rotate(318deg);
 transform:rotate(318deg);
 }
+/*.card_1:hover {
+cursor: pointer;
+-webkit-transform:rotate(342deg) scale(1.15);
+-moz-transform:rotate(342deg) scale(1.15);
+-o-transform:rotate(342deg) scale(1.15);
+-ms-transform:rotate(342deg) scale(1.15);
+transform:rotate(342deg) scale(1.15);    
+}*/
 .card_2 {
 width: 12vh;
 height: 12vh;
@@ -475,70 +483,286 @@ height: 12vh;
 -ms-transform:rotate(342deg);
 transform:rotate(342deg);
 }
+/*.card_2:hover {
+cursor: pointer;
+-webkit-transform:rotate(6deg) scale(1.15);
+-moz-transform:rotate(6deg) scale(1.15);
+-o-transform:rotate(6deg) scale(1.15);
+-ms-transform:rotate(6deg) scale(1.15);
+transform:rotate(6deg) scale(1.15);    
+}*/
 .card_3 {
 width: 12vh;
 height: 12vh;
+-webkit-transform:rotate(6deg);
+-moz-transform:rotate(6deg);
+-o-transform:rotate(6deg);
+-ms-transform:rotate(6deg);
+transform:rotate(6deg);
 }
+/*.card_3:hover {
+cursor: pointer;
+-webkit-transform:rotate(30deg) scale(1.15);
+-moz-transform:rotate(30deg) scale(1.15);
+-o-transform:rotate(30deg) scale(1.15);
+-ms-transform:rotate(30deg) scale(1.15);
+transform:rotate(30deg) scale(1.15);    
+}*/
 .card_4 {
 width: 12vh;
 height: 12vh;
+-webkit-transform:rotate(30deg);
+-moz-transform:rotate(30deg);
+-o-transform:rotate(30deg);
+-ms-transform:rotate(30deg);
+transform:rotate(30deg);
 }
+/*.card_4:hover {
+cursor: pointer;
+-webkit-transform:rotate(54deg) scale(1.15);
+-moz-transform:rotate(54deg) scale(1.15);
+-o-transform:rotate(54deg) scale(1.15);
+-ms-transform:rotate(54deg) scale(1.15);
+transform:rotate(54deg) scale(1.15);    
+}*/
 .card_5 {
 width: 12vh;
 height: 12vh;
+-webkit-transform:rotate(54deg);
+-moz-transform:rotate(54deg);
+-o-transform:rotate(54deg);
+-ms-transform:rotate(54deg);
+transform:rotate(54deg);
 }
+/*.card_5:hover {
+cursor: pointer;
+-webkit-transform:rotate(78deg) scale(1.15);
+-moz-transform:rotate(78deg) scale(1.15);
+-o-transform:rotate(78deg) scale(1.15);
+-ms-transform:rotate(78deg) scale(1.15);
+transform:rotate(78deg) scale(1.15);    
+}*/
 .card_6 {
 width: 12vh;
 height: 12vh;
+-webkit-transform:rotate(78deg);
+-moz-transform:rotate(78deg);
+-o-transform:rotate(78deg);
+-ms-transform:rotate(78deg);
+transform:rotate(78deg);
 }
+/*.card_6:hover {
+cursor: pointer;
+-webkit-transform:rotate(102deg) scale(1.15);
+-moz-transform:rotate(102deg) scale(1.15);
+-o-transform:rotate(102deg) scale(1.15);
+-ms-transform:rotate(102deg) scale(1.15);
+transform:rotate(102deg) scale(1.15);    
+}*/
 .card_7 {
 width: 12vh;
 height: 12vh;
+-webkit-transform:rotate(102deg);
+-moz-transform:rotate(102deg);
+-o-transform:rotate(102deg);
+-ms-transform:rotate(102deg);
+transform:rotate(102deg);
 }
+/*.card_7:hover {
+cursor: pointer;
+-webkit-transform:rotate(126deg) scale(1.15);
+-moz-transform:rotate(126deg) scale(1.15);
+-o-transform:rotate(126deg) scale(1.15);
+-ms-transform:rotate(126deg) scale(1.15);
+transform:rotate(126deg) scale(1.15);    
+}*/
 .card_8 {
 width: 12vh;
 height: 12vh;
+-webkit-transform:rotate(126deg);
+-moz-transform:rotate(126deg);
+-o-transform:rotate(126deg);
+-ms-transform:rotate(126deg);
+transform:rotate(126deg);
 }
+/*.card_8:hover {
+cursor: pointer;
+-webkit-transform:rotate(150deg) scale(1.15);
+-moz-transform:rotate(150deg) scale(1.15);
+-o-transform:rotate(150deg) scale(1.15);
+-ms-transform:rotate(150deg) scale(1.15);
+transform:rotate(150deg) scale(1.15);    
+}*/
 .card_9 {
 width: 12vh;
 height: 12vh;
+-webkit-transform:rotate(150deg);
+-moz-transform:rotate(150deg);
+-o-transform:rotate(150deg);
+-ms-transform:rotate(150deg);
+transform:rotate(150deg);
 }
+/*.card_9:hover {
+cursor: pointer;
+-webkit-transform:rotate(174deg) scale(1.15);
+-moz-transform:rotate(174deg) scale(1.15);
+-o-transform:rotate(174deg) scale(1.15);
+-ms-transform:rotate(174deg) scale(1.15);
+transform:rotate(174deg) scale(1.15);    
+}*/
 .card_10 {
 width: 11.8vh;
 height: 11.8vh;
+-webkit-transform:rotate(174deg);
+-moz-transform:rotate(174deg);
+-o-transform:rotate(174deg);
+-ms-transform:rotate(174deg);
+transform:rotate(174deg);
 }
+/*.card_10:hover {
+cursor: pointer;
+-webkit-transform:rotate(198deg) scale(1.15);
+-moz-transform:rotate(198deg) scale(1.15);
+-o-transform:rotate(198deg) scale(1.15);
+-ms-transform:rotate(198deg) scale(1.15);
+transform:rotate(198deg) scale(1.15);    
+}*/
 .card_11 {
 width: 11.5vh;
 height: 11.5vh;
+-webkit-transform:rotate(198deg);
+-moz-transform:rotate(198deg);
+-o-transform:rotate(198deg);
+-ms-transform:rotate(198deg);
+transform:rotate(198deg);
 }
+/*.card_11:hover {
+cursor: pointer;
+-webkit-transform:rotate(222deg) scale(1.15);
+-moz-transform:rotate(222deg) scale(1.15);
+-o-transform:rotate(222deg) scale(1.15);
+-ms-transform:rotate(222deg) scale(1.15);
+transform:rotate(222deg) scale(1.15);    
+}*/
 .card_12 {
 width: 11vh;
 height: 11vh;
+-webkit-transform:rotate(222deg);
+-moz-transform:rotate(222deg);
+-o-transform:rotate(222deg);
+-ms-transform:rotate(222deg);
+transform:rotate(222deg);
 }
+/*.card_12:hover {
+cursor: pointer;
+-webkit-transform:rotate(246deg) scale(1.15);
+-moz-transform:rotate(246deg) scale(1.15);
+-o-transform:rotate(246deg) scale(1.15);
+-ms-transform:rotate(246deg) scale(1.15);
+transform:rotate(246deg) scale(1.15);    
+}*/
 .card_13 {
 width: 10vh;
 height: 10vh;
+-webkit-transform:rotate(246deg);
+-moz-transform:rotate(246deg);
+-o-transform:rotate(246deg);
+-ms-transform:rotate(246deg);
+transform:rotate(246deg);
 }
+/*.card_13:hover {
+cursor: pointer;
+-webkit-transform:rotate(270deg) scale(1.15);
+-moz-transform:rotate(270deg) scale(1.15);
+-o-transform:rotate(270deg) scale(1.15);
+-ms-transform:rotate(270deg) scale(1.15);
+transform:rotate(270deg) scale(1.15);    
+}*/
 .card_14 {
 width: 9vh;
 height: 9vh;
+-webkit-transform:rotate(270deg);
+-moz-transform:rotate(270deg);
+-o-transform:rotate(270deg);
+-ms-transform:rotate(270deg);
+transform:rotate(270deg);
 }
+/*.card_14:hover {
+cursor: pointer;
+-webkit-transform:rotate(294deg) scale(1.15);
+-moz-transform:rotate(294deg) scale(1.15);
+-o-transform:rotate(294deg) scale(1.15);
+-ms-transform:rotate(294deg) scale(1.15);
+transform:rotate(294deg) scale(1.15);    
+}*/
 .card_15 {
 width: 8vh;
 height: 8vh;
+-webkit-transform:rotate(294deg);
+-moz-transform:rotate(294deg);
+-o-transform:rotate(294deg);
+-ms-transform:rotate(294deg);
+transform:rotate(294deg);
 }
+/*.card_15:hover {
+cursor: pointer;
+-webkit-transform:rotate(318deg) scale(1.15);
+-moz-transform:rotate(318deg) scale(1.15);
+-o-transform:rotate(318deg) scale(1.15);
+-ms-transform:rotate(318deg) scale(1.15);
+transform:rotate(318deg) scale(1.15);    
+}*/
 .card_16 {
 width: 7vh;
 height: 7vh;
+-webkit-transform:rotate(318deg);
+-moz-transform:rotate(318deg);
+-o-transform:rotate(318deg);
+-ms-transform:rotate(318deg);
+transform:rotate(318deg);
 }
+/*.card_16:hover {
+cursor: pointer;
+-webkit-transform:rotate(342deg) scale(1.15);
+-moz-transform:rotate(342deg) scale(1.15);
+-o-transform:rotate(342deg) scale(1.15);
+-ms-transform:rotate(342deg) scale(1.15);
+transform:rotate(342deg) scale(1.15);    
+}*/
 .card_17 {
 width: 6vh;
 height: 6vh;
+-webkit-transform:rotate(342deg);
+-moz-transform:rotate(342deg);
+-o-transform:rotate(342deg);
+-ms-transform:rotate(342deg);
+transform:rotate(342deg);
 }
+/*.card_17:hover {
+cursor: pointer;
+-webkit-transform:rotate(6deg) scale(1.15);
+-moz-transform:rotate(6deg) scale(1.15);
+-o-transform:rotate(6deg) scale(1.15);
+-ms-transform:rotate(6deg) scale(1.15);
+transform:rotate(6deg) scale(1.15);    
+}*/
 .card_18 {
 width: 5vh;
 height: 5vh;
+-webkit-transform:rotate(6deg);
+-moz-transform:rotate(6deg);
+-o-transform:rotate(6deg);
+-ms-transform:rotate(6deg);
+transform:rotate(6deg);
 }
+/*.card_18:hover {
+cursor: pointer;
+-webkit-transform:rotate(318deg) scale(1.15);
+-moz-transform:rotate(318deg) scale(1.15);
+-o-transform:rotate(318deg) scale(1.15);
+-ms-transform:rotate(318deg) scale(1.15);
+transform:rotate(318deg) scale(1.15);    
+}*/
 
 .web_card:hover {
 cursor: pointer;
